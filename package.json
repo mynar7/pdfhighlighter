@@ -1,0 +1,22 @@
+{
+  "name": "pdfApp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "mkdirp dist && cp -R ./node_modules/pdfjs-dist/build/pdf.worker.min.js ./dist && parcel index.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "materialize-css": "^1.0.0-rc.2",
+    "pdfjs-dist": "^2.0.943"
+  },
+  "devDependencies": {
+    "cssnano": "^4.1.8",
+    "mkdirp": "^0.5.1"
+  }
+}

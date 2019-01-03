@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Image selector</title>
+  <link rel="stylesheet" href="./node_modules/materialize-css/dist/css/materialize.min.css">
+  <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div>
+        <div class="file-field input-field">
+          <div class="btn waves-effect waves-light blue">
+            <span>PDF</span>
+            <input type="file" name="file" accept=".pdf">
+          </div>
+          <div class="file-path-wrapper">
+            <input class="file-path validate" type="text">
+          </div>
+        </div>
+        <div class="ctrlBtns">
+          <button class="btn waves-effect waves-light blue" id="render">Render</button>
+          <div class="boxBtns btnGrp">
+            <button class="btn waves-effect waves-light blue" id="undo">Undo</button>
+            <button class="btn waves-effect waves-light blue" id="clearAll">Clear Boxes</button>
+          </div>
+          <div class="zoomBtns btnGrp">
+            <button class="btn waves-effect waves-light blue" id="zoomin">+</button>
+            <button class="btn waves-effect waves-light blue" id="reset">Reset</button>
+            <button class="btn waves-effect waves-light blue" id="zoomout">-</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <div class="center-align canvasContainer">
+    <canvas id="pdfCanvas"></canvas>
+    <canvas id="boxCanvas"></canvas>
+  </div>
+
+  <div class="center-align" id="navBtns">
+    <p id="pageNumDisplay"></p>
+  </div>
+  <script src="./node_modules/materialize-css/dist/js/materialize.min.js"></script>
+  <script src="./index.js"></script>
+</body>
+
+</html>

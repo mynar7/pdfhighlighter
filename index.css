@@ -1,0 +1,32 @@
+.canvasContainer {
+    display: grid;
+}
+
+canvas {
+    /*   background-color: red; */
+    /*   border: 1px black dotted; */
+    box-shadow: 2px 2px 5px rgba(180, 180, 180, 1);
+    display: none;
+    margin: auto;
+    padding: 0;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+#boxCanvas {
+    /*   background: rgba(150, 0, 0, 0.4); */
+    box-shadow: none;
+}
+
+.ctrlBtns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btnGrp {
+    display: none;
+}
+
+.zoom {
+    display: none;
+}
